@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>school plaza</title>
+
+  
+  
+  <script>
+ function oncart()
+{ 
+ var check=false; 
+ var cookievalue=" ";
+
+
+  if(document.getElementById("b1").checked)
+{ check=true; var quantity=document.getElementById("q1").value; var
+price = 600; var total=(price*quantity); cookievalue+=":red school bag,"+price+","+quantity+","+total;
+}
+if(document.getElementById("b2").checked)
+{
+check=true; var quantity=document.getElementById("q2").value; var
+price = 500; var total=(price*quantity); cookievalue+=":blue bag,"+price+","+quantity+","+total;
+}
+if(document.getElementById("lb1").checked)
+{
+check=true; var quantity=document.getElementById("q3").value; var
+price = 450; var total=(price*quantity); cookievalue+=":steel lunch box,"+price+","+quantity+","+total;
+}
+if(document.getElementById("wb1").checked)
+{
+check=true; var quantity=document.getElementById("q4").value; var
+price = 570; var total=(price*quantity); cookievalue+=":steel water bottle,"+price+","+quantity+","+total;
+}
+
+
+if(check==false)
+    {
+  alert("no item selected");
+    }
+   else
+      {
+             document.cookie=cookievalue;
+             window.location="bill.html";
+      }
+
+
+
+
+}
+  </script>
+</head><body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<form method="post" name="school plaza"><br>
+  <table style="text-align: left; width: 1124px; height: 230px;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; background-color: rgb(51, 204, 255); width: 852px;"><big><big><big><big><big><big>school
+plaza<span style="color: rgb(51, 204, 0);"></span></big></big></big></big></big></big><br>
+&nbsp;This is link, where you can purchase school items.<br clear="all">
+        </td>
+        <td style="vertical-align: top; width: 252px;"><img style="width: 254px; height: 199px;" alt="" src="school%20plaza.jpeg"><br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table style="text-align: left; width: 1107px; height: 91px;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; background-color: yellow;"><big><big>categories</big></big><br>
+        </td>
+        <td style="vertical-align: top; background-color: yellow;"><big><big>All
+products.<br>
+        </big></big></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; background-color: yellow;">
+        <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;"><a href="bag.html">school
+bag</a><br>
+              <hr style="width: 100%; height: 2px;"></td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;"><a href="lunch%20box.html">water
+bottle</a><br>
+              <hr style="width: 100%; height: 2px;"></td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;"><a href="lunch%20box.html">lunch box</a><br>
+              <hr style="width: 100%; height: 2px;"></td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;"><a href="index%20-%20Copy.html">home</a><br>
+              <hr style="width: 100%; height: 2px;"></td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;"><span style="color: red;">purchase</span><br>
+              <hr style="width: 100%; height: 2px;"></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+        <td style="vertical-align: top; background-color: yellow;">
+        <div style="text-align: center;"> </div>
+        <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top;">
+              <div style="text-align: center;"><img style="width: 205px; height: 154px;" alt="" src="bag%201.jpeg" align="middle"><br>
+              </div>
+&nbsp;&nbsp;&nbsp;&nbsp; red school bag<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Rs. 600<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="b1" name="b1" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input size="2" id="q1" name="q1">quantity<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+              <td style="vertical-align: top;"><img style="width: 171px; height: 156px;" alt="" src="b5.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blue
+bag<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.500<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="b2" name="check" value="check" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="q2" size="2" name="quantity">quantity<br>
+&nbsp;</td>
+              <td style="vertical-align: top;"><img style="width: 196px; height: 163px;" alt="" src="lb1.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+steel lunch box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs. 450<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="lb1" name="check" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="q3" size="2" name="quantity">quantity</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;"><img style="width: 162px; height: 196px;" alt="" src="bot1.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; steel water bottle <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.570<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="wb1" name="wb1" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="q4" size="2" name="quantity">quantity</td>
+              <td style="vertical-align: top;"><img style="width: 196px; height: 196px;" alt="" src="wb3.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blue bottle<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.420<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="add to cart" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input size="2" name="quantity">quantity</td>
+              <td style="vertical-align: top;"><span style="font-style: italic;"><img style="width: 203px; height: 192px;" alt="" src="bot1.jpeg"></span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; white bottel<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.700<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="add to cart" type="checkbox">Add to cart. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input size="2" name="quantity">quantity</td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img style="width: 169px; height: 196px;" alt="" src="bag4.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adidas bag<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.900<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="add to cart" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input size="2" name="quantity">quantity</td>
+              <td style="vertical-align: top;"><img style="width: 220px; height: 220px;" alt="" src="lb3.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; lunch box<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Rs.300<br>
+&nbsp;&nbsp; <input name="add to cart" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp; <input size="2" name="quantity">quantity</td>
+              <td style="vertical-align: top;"><img style="width: 225px; height: 225px;" alt="" src="bag3.jpeg"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hp bag<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rs.600<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="add to cart" type="checkbox">Add to cart.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input size="2" name="quantity">quantity</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <div style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input onclick="oncart()" name="btnb" value="Purchase" type="button"><br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+Thank you for visiting this site.<br>
+Supports us.<br>
+Have a good day.<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</form>
+
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+</body></html>
