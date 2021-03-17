@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>bill</title>
+
+  
+  
+  <script>
+ function myfun()
+{
+
+var cookieArr=new Array;
+cookieArr=document.cookie.split(":");
+for(i=1;i<cookieArr;i++)
+{
+ var cookieData=cookieArr[i].split(",");
+ document.writenln(cookieData[0]);
+ document.writenln(cookieData[1]);
+ document.writenln(cookieData[2]);
+ document.writenln(cookieData[3]);
+}
+
+}
+  </script>
+</head><body onload="myfun()">
+<br>
+
+<br>
+</body></html>
