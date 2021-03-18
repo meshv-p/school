@@ -9,16 +9,21 @@
   <script>
  function myfun()
 {
-
-var cookieArr=new Array;
-cookieArr=document.cookie.split(":");
-for(i=1;i<cookieArr;i++)
+var cookiearr=new Array();
+cookiearr=document.cookie.split(":");
+document.writeln("<center><h1>welcome to billing</h1></center>");
+document.write("<center><table border=3><thead><tr><th>description</th><th>price</th><th>quantity</th><th>total</th></tr></thead>");
+var total2=0;
+var total3=0;
+for(var i=1;i<cookiearr.length;i++)
 {
- var cookieData=cookieArr[i].split(",");
- document.writenln(cookieData[0]);
- document.writenln(cookieData[1]);
- document.writenln(cookieData[2]);
- document.writenln(cookieData[3]);
+var cookiedata=cookiearr[i].split(",");
+document.writeln("<tr><td>"+cookiedata[0]+"</td><td>"+cookiedata[1]+"</td><td>"+cookiedata[2]+"</td><td>"+cookiedata[3]+"</td></tr>");
+total2+=parseFloat(cookiedata[2]);
+total3+=parseFloat(cookiedata[3]);
+}
+document.write("<tr><td>total</td<td>"+""+"</td><td>"+total2+"</td><td>"+total3+"</td></tr>");
+document.write("</tbody></table></center>");
 }
 
 }
