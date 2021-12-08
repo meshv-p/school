@@ -1,35 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
+<html>
+
+<head>
+
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>bill</title>
 
-  
-  
+
+
   <script>
- function myfun()
-{
-var cookiearr=new Array();
-cookiearr=document.cookie.split(":");
-document.writeln("<center><h1>welcome to billing</h1></center>");
-document.write("<center><table border=3><thead><tr><th>description</th><th>price</th><th>quantity</th><th>total</th></tr></thead>");
-var total2=0;
-var total3=0;
-for(var i=1;i<cookiearr.length;i++)
-{
-var cookiedata=cookiearr[i].split(",");
-document.writeln("<tr><td>"+cookiedata[0]+"</td><td>"+cookiedata[1]+"</td><td>"+cookiedata[2]+"</td><td>"+cookiedata[3]+"</td></tr>");
-total2+=parseFloat(cookiedata[2]);
-total3+=parseFloat(cookiedata[3]);
-}
-document.write("<tr><td>total</td<td>"+""+"</td><td>"+total2+"</td><td>"+total3+"</td></tr>");
-document.write("</tbody></table></center>");
-}
+    function myfun() {
+      var cookiearr = new Array();
+      cookiearr = document.cookie.split(",");
+      console.log(cookiearr);
+      document.writeln("<center><h1>welcome to billing</h1></center>");
+      document.write("<center><table border=3><thead><tr><th>description</th><th>price</th><th>quantity</th><th>total</th></tr></thead>");
+      var total2 = 0;
+      var total3 = 0;
+      for (var i = 1; i < cookiearr.length; i++) {
+        var cookiedata = cookiearr[i].split(",");
+        document.writeln("<tr><td>" + cookiedata[0] + "</td><td>" + cookiedata[1] + "</td><td>" + cookiedata[2] + "</td><td>" + cookiedata[3] + "</td></tr>");
+        total2 += parseFloat(cookiedata[2]);
+        total3 += parseFloat(cookiedata[3]);
+      }
+      document.write("<tr><td>total</td<td>" + "" + "</td><td>" + total2 + "</td><td>" + total3 + "</td></tr>");
+      document.write("</tbody></table></center>");
+    }
 
-}
+
   </script>
-</head><body onload="myfun()">
-<br>
+</head>
 
-<br>
-</body></html>
+<body onload="myfun()">
+  <br>
+
+  <br>
+</body>
+
+</html>
