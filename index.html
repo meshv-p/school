@@ -20,15 +20,15 @@
       }
       if (document.getElementById("b2").checked) {
         check = true; var quantity = document.getElementById("q2").value; var
-          price = 500; var total = (price * quantity); cookievalue += ":blue bag," + price + "," + quantity + "," + total;
+          price = 500; var total = (price * quantity); cookievalue += "blue bag," + price + "," + quantity + "," + total;
       }
       if (document.getElementById("lb1").checked) {
         check = true; var quantity = document.getElementById("q3").value; var
-          price = 450; var total = (price * quantity); cookievalue += ":steel lunch box," + price + "," + quantity + "," + total;
+          price = 450; var total = (price * quantity); cookievalue += "steel lunch box," + price + "," + quantity + "," + total;
       }
       if (document.getElementById("wb1").checked) {
         check = true; var quantity = document.getElementById("q4").value; var
-          price = 570; var total = (price * quantity); cookievalue += ":steel water bottle," + price + "," + quantity + "," + total;
+          price = 570; var total = (price * quantity); cookievalue += "steel water bottle," + price + "," + quantity + "," + total;
       }
 
 
@@ -39,7 +39,7 @@
         document.cookie = cookievalue;
         console.log(document.cookie);
         setTimeout(() => {
-          
+
           window.location = "bill.html";
         }, 10000);
       }
