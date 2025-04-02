@@ -6,6 +6,52 @@
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>school plaza</title>
 
+  
+
+
+  <script>
+    function oncart() {
+      var check = false;
+      var cookievalue = " ";
+
+
+      if (document.getElementById("b1").checked) {
+        check = true; var quantity = document.getElementById("q1").value; var
+          price = 600; var total = (price * quantity); cookievalue += "red school bag," + price + "," + quantity + "," + total;
+      }
+      if (document.getElementById("b2").checked) {
+        check = true; var quantity = document.getElementById("q2").value; var
+          price = 500; var total = (price * quantity); cookievalue += "blue bag," + price + "," + quantity + "," + total;
+      }
+      if (document.getElementById("lb1").checked) {
+        check = true; var quantity = document.getElementById("q3").value; var
+          price = 450; var total = (price * quantity); cookievalue += "steel lunch box," + price + "," + quantity + "," + total;
+      }
+      if (document.getElementById("wb1").checked) {
+        check = true; var quantity = document.getElementById("q4").value; var
+          price = 570; var total = (price * quantity); cookievalue += "steel water bottle," + price + "," + quantity + "," + total;
+      }
+
+
+      if (check == false) {
+        alert("no item selected");
+      }
+      else {
+        document.cookie = cookievalue;
+        console.log(document.cookie);
+        setTimeout(() => {
+
+          window.location = "bill.html";
+        }, 10000);
+      }
+
+
+
+    }
+  </script>
+</head>
+
+<body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
   <style type='text/css'>
  .embeddedServiceHelpButton .helpButton .uiButton {
   background-color: #005290;
@@ -68,51 +114,6 @@
   initESW('https://service.force.com');
  }
 </script>
-
-
-  <script>
-    function oncart() {
-      var check = false;
-      var cookievalue = " ";
-
-
-      if (document.getElementById("b1").checked) {
-        check = true; var quantity = document.getElementById("q1").value; var
-          price = 600; var total = (price * quantity); cookievalue += "red school bag," + price + "," + quantity + "," + total;
-      }
-      if (document.getElementById("b2").checked) {
-        check = true; var quantity = document.getElementById("q2").value; var
-          price = 500; var total = (price * quantity); cookievalue += "blue bag," + price + "," + quantity + "," + total;
-      }
-      if (document.getElementById("lb1").checked) {
-        check = true; var quantity = document.getElementById("q3").value; var
-          price = 450; var total = (price * quantity); cookievalue += "steel lunch box," + price + "," + quantity + "," + total;
-      }
-      if (document.getElementById("wb1").checked) {
-        check = true; var quantity = document.getElementById("q4").value; var
-          price = 570; var total = (price * quantity); cookievalue += "steel water bottle," + price + "," + quantity + "," + total;
-      }
-
-
-      if (check == false) {
-        alert("no item selected");
-      }
-      else {
-        document.cookie = cookievalue;
-        console.log(document.cookie);
-        setTimeout(() => {
-
-          window.location = "bill.html";
-        }, 10000);
-      }
-
-
-
-    }
-  </script>
-</head>
-
-<body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
   <form method="post" name="school plaza"><br>
     <table style="text-align: left; width: 1124px; height: 230px;" border="1" cellpadding="2" cellspacing="2">
       <tbody>
